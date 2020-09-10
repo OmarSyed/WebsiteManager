@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.customview.PageViewer">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <MenuButton mnemonicParsing="false" text="Actions">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Add page" />
+                <MenuItem mnemonicParsing="false" text="Delete all pages" />
+                <MenuItem mnemonicParsing="false" text="Export website" />
+              </items>
+            </MenuButton>
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <WebView prefHeight="360.0" prefWidth="426.0" BorderPane.alignment="CENTER" fx:id="webView"/>
+   </center>
+   <left>
+      <VBox prefHeight="360.0" prefWidth="131.0" BorderPane.alignment="CENTER" fx:id="leftPane"/>
+   </left>
+</BorderPane>
